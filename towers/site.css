@@ -213,3 +213,7 @@
   .twr .invest{min-height:0}
   .twr .invest-note{font-size:14.5px}
 }
+
+/* counters must inherit the big serif from <b> even under Tilda's #allrecords rules */
+.twr .statcol b .twr-cnt{font-family:inherit !important;font-size:inherit !important;line-height:inherit !important;color:inherit !important;letter-spacing:inherit !important;font-weight:inherit !important}
+.twr .statcol b{font-size:clamp(44px,4.6vw,62px) !important}

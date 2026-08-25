@@ -102,7 +102,7 @@
           if (!e.isIntersecting) return;
           var el = e.target;
           el.classList.add('in');
-          el.querySelectorAll('.cnt').forEach(countUp);
+          el.querySelectorAll('.twr-cnt').forEach(countUp);
           io.unobserve(el);
         });
       }, { threshold: 0.18 });
@@ -110,7 +110,7 @@
       /* standalone shots (inside .shots/.grid-r get .in from parent) */
     } else {
       root.querySelectorAll('.rv, .statcol, .shots, .grid-r, .scene').forEach(function (el) { el.classList.add('in', 'seen'); });
-      root.querySelectorAll('.cnt').forEach(countUp);
+      root.querySelectorAll('.twr-cnt').forEach(countUp);
       var inv = root.querySelector('.invest'); if (inv) drawChart(inv);
     }
 
