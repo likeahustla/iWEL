@@ -55,40 +55,43 @@
   </div>
 
   <!-- ===== 4. ЛОКАЦИЯ: инфографика как на слайде ===== -->
-  <div class="scene loc" data-bg="location.jpg">
-    <div class="bg"></div>
+  <div class="scene loc" data-bg="location.jpg" data-imgw="1600" data-imgh="893" data-focusx="71">
+    <div class="mapzone">
+      <div class="bg"></div>
+      <svg class="maplines" aria-hidden="true"></svg>
+      <div class="pin main" data-x="87" data-y="17" style="left:87%;top:17%;--d:.1s">
+        <div class="ring"><img src="https://likeahustla.github.io/iWEL/towers/assets/hero.jpg" alt="TOWERS"></div>
+        <div class="cap"><b>TOWERS</b><span>ул. Линейная, 5</span></div>
+      </div>
+      <div class="pin" data-x="55" data-y="31" style="left:55%;top:31%;--d:.35s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Духовный центр</b><span>школы · сады · музеи · спортивные комплексы</span></div>
+      </div>
+      <div class="pin up" data-x="34" data-y="23" style="left:34%;top:23%;--d:.55s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Аллея Героев Медиков</b></div>
+      </div>
+      <div class="pin" data-x="77" data-y="43" style="left:77%;top:43%;--d:.75s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Аэропортная трасса</b><span>собственный заезд с трассы</span></div>
+      </div>
+      <div class="pin up" data-x="11" data-y="10" style="left:11%;top:10%;--d:.95s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Пляж</b><span>← Каспийское море</span></div>
+      </div>
+    </div>
     <div class="shade"></div>
-    <svg class="maplines" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
-      <line x1="87" y1="17" x2="55" y2="31"/>
-      <line x1="87" y1="17" x2="34" y2="23"/>
-      <line x1="87" y1="17" x2="77" y2="43"/>
-      <line x1="87" y1="17" x2="11" y2="10"/>
-    </svg>
-    <div class="pin main" style="left:87%;top:17%;--d:.1s">
-      <div class="ring"><img src="https://likeahustla.github.io/iWEL/towers/assets/hero.jpg" alt="TOWERS"></div>
-      <div class="cap"><b>TOWERS</b><span>ул. Линейная, 5</span></div>
-    </div>
-    <div class="pin" style="left:55%;top:31%;--d:.35s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Духовный центр</b><span>школы · сады · музеи · спортивные комплексы</span></div>
-    </div>
-    <div class="pin up" style="left:34%;top:23%;--d:.55s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Аллея Героев Медиков</b></div>
-    </div>
-    <div class="pin" style="left:77%;top:43%;--d:.75s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Аэропортная трасса</b><span>собственный заезд с трассы</span></div>
-    </div>
-    <div class="pin up" style="left:11%;top:10%;--d:.95s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Пляж</b><span>← Каспийское море</span></div>
-    </div>
     <div class="wrap">
       <div class="content rv rv-l">
         <div class="dash"></div>
         <h2>Локация</h2>
         <p class="sub">Всё главное — в нескольких минутах от дома</p>
+        <ul class="maplist">
+          <li><b>Духовный центр</b><em>школы · сады · музеи · спорт</em></li>
+          <li><b>Аллея Героев Медиков</b><em>рядом</em></li>
+          <li><b>Аэропортная трасса</b><em>собственный заезд</em></li>
+          <li><b>Пляж Каспийского моря</b><em>в короткой поездке</em></li>
+        </ul>
       </div>
     </div>
   </div>

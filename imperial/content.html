@@ -34,45 +34,48 @@
   </div>
 
   <!-- ===== 3. ЛОКАЦИЯ: карта-инфографика ===== -->
-  <div class="scene loc" data-bg="map.jpg">
-    <div class="bg"></div>
+  <div class="scene loc" data-bg="map.jpg" data-imgw="2000" data-imgh="1116" data-focusx="38">
+    <div class="mapzone">
+      <div class="bg"></div>
+      <svg class="maplines" aria-hidden="true"></svg>
+      <div class="pin main" data-x="30" data-y="38" style="left:30%;top:38%;--d:.1s">
+        <div class="ring"><img src="https://likeahustla.github.io/iWEL/imperial/assets/about.jpg" alt="IMPERIAL"></div>
+        <div class="cap"><b>IMPERIAL</b><span>ул. Амет-Хан Султана, 34</span></div>
+      </div>
+      <div class="pin" data-x="42" data-y="36" style="left:42%;top:36%;--d:.35s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Ресторан «Падишах»</b><span>≈ 1 минута</span></div>
+      </div>
+      <div class="pin" data-x="34" data-y="58" style="left:34%;top:58%;--d:.55s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Детский сад «Ласточка»</b><span>≈ 8–9 мин · пешком</span></div>
+      </div>
+      <div class="pin" data-x="52" data-y="56" style="left:52%;top:56%;--d:.75s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Каспийский лицей №8</b><span>≈ 8–10 мин · пешком</span></div>
+      </div>
+      <div class="pin" data-x="82" data-y="16" style="left:82%;top:16%;--d:.95s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Набережная Каспийска</b><span>≈ 5–7 мин · на машине</span></div>
+      </div>
+      <div class="pin up" data-x="60" data-y="78" style="left:60%;top:78%;--d:1.15s">
+        <div class="dot"></div>
+        <div class="lbl"><b>Международный аэропорт</b><span>≈ 15 мин · на машине</span></div>
+      </div>
+    </div>
     <div class="shade"></div>
-    <svg class="maplines" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
-      <line x1="30" y1="38" x2="42" y2="36"/>
-      <line x1="30" y1="38" x2="34" y2="58"/>
-      <line x1="30" y1="38" x2="52" y2="56"/>
-      <line x1="30" y1="38" x2="82" y2="16"/>
-      <line x1="30" y1="38" x2="60" y2="78"/>
-    </svg>
-    <div class="pin main" style="left:30%;top:38%;--d:.1s">
-      <div class="ring"><img src="https://likeahustla.github.io/iWEL/imperial/assets/about.jpg" alt="IMPERIAL"></div>
-      <div class="cap"><b>IMPERIAL</b><span>ул. Амет-Хан Султана, 34</span></div>
-    </div>
-    <div class="pin" style="left:42%;top:36%;--d:.35s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Ресторан «Падишах»</b><span>≈ 1 минута</span></div>
-    </div>
-    <div class="pin" style="left:34%;top:58%;--d:.55s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Детский сад «Ласточка»</b><span>≈ 8–9 мин · пешком</span></div>
-    </div>
-    <div class="pin" style="left:52%;top:56%;--d:.75s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Каспийский лицей №8</b><span>≈ 8–10 мин · пешком</span></div>
-    </div>
-    <div class="pin" style="left:82%;top:16%;--d:.95s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Набережная Каспийска</b><span>≈ 5–7 мин · на машине</span></div>
-    </div>
-    <div class="pin up" style="left:60%;top:78%;--d:1.15s">
-      <div class="dot"></div>
-      <div class="lbl"><b>Международный аэропорт</b><span>≈ 15 мин · на машине</span></div>
-    </div>
     <div class="wrap">
       <div class="content rv rv-l">
         <div class="dash"></div>
         <h2>Всё необходимое — рядом</h2>
         <p class="sub">Удобное расположение для комфортной жизни и выгодных инвестиций</p>
+        <ul class="maplist">
+          <li><b>Ресторан «Падишах»</b><em>≈ 1 минута</em></li>
+          <li><b>Детский сад «Ласточка»</b><em>≈ 8–9 мин пешком</em></li>
+          <li><b>Каспийский лицей №8</b><em>≈ 8–10 мин пешком</em></li>
+          <li><b>Набережная Каспийска</b><em>≈ 5–7 мин на машине</em></li>
+          <li><b>Международный аэропорт</b><em>≈ 15 мин на машине</em></li>
+        </ul>
       </div>
     </div>
   </div>

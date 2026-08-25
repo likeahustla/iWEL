@@ -116,7 +116,7 @@
 
     /* --- subtle parallax for scene backgrounds --- */
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      var bgs = [].slice.call(root.querySelectorAll('.scene .bg'));
+      var bgs = [].slice.call(root.querySelectorAll('.scene .bg')).filter(function(b){return !b.closest('.loc');});
       var ticking = false;
       function onScroll() {
         if (ticking) return;
@@ -137,6 +137,58 @@
       window.addEventListener('scroll', onScroll, { passive: true });
       setTimeout(onScroll, 2800); /* after entrance scale animation */
     }
+
+
+    /* --- precise map pin layout (image-coordinate anchored) --- */
+    (function setupMap() {
+      var loc = root.querySelector('.loc');
+      if (!loc) return;
+      var zone = loc.querySelector('.mapzone');
+      var svg = loc.querySelector('.maplines');
+      var bg = zone ? zone.querySelector('.bg') : null;
+      if (!zone || !svg || !bg) return;
+      var imgw = parseFloat(loc.getAttribute('data-imgw')) || 1600;
+      var imgh = parseFloat(loc.getAttribute('data-imgh')) || 900;
+      var focus = parseFloat(loc.getAttribute('data-focusx'));
+      if (isNaN(focus)) focus = 50;
+      var pins = [].slice.call(zone.querySelectorAll('.pin'));
+      function layout() {
+        var W = zone.clientWidth, H = zone.clientHeight;
+        if (!W || !H) return;
+        var mobile = window.innerWidth <= 640;
+        var P = mobile ? focus : 50;
+        var scale = Math.max(W / imgw, H / imgh);
+        var dw = imgw * scale, dh = imgh * scale;
+        var ox = (W - dw) * P / 100, oy = (H - dh) * 0.5;
+        bg.style.backgroundSize = dw + 'px ' + dh + 'px';
+        bg.style.backgroundPosition = ox + 'px ' + oy + 'px';
+        svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+        var main = null;
+        pins.forEach(function (p) {
+          var x = ox + (parseFloat(p.getAttribute('data-x')) / 100) * dw;
+          var y = oy + (parseFloat(p.getAttribute('data-y')) / 100) * dh;
+          var vis = x > W * 0.05 && x < W * 0.95 && y > H * 0.06 && y < H * 0.94;
+          p.style.left = x + 'px';
+          p.style.top = y + 'px';
+          p.style.display = vis ? '' : 'none';
+          p._pt = vis ? [x, y] : null;
+          if (p.classList.contains('main')) main = p;
+        });
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+        if (main && main._pt) {
+          pins.forEach(function (p) {
+            if (p === main || !p._pt) return;
+            var l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            l.setAttribute('x1', main._pt[0]); l.setAttribute('y1', main._pt[1]);
+            l.setAttribute('x2', p._pt[0]); l.setAttribute('y2', p._pt[1]);
+            svg.appendChild(l);
+          });
+        }
+      }
+      layout();
+      window.addEventListener('resize', layout);
+      setTimeout(layout, 400);
+    })();
 
     /* --- lightbox --- */
     var lb = document.createElement('div');
