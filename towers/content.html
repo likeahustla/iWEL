@@ -1,184 +1,227 @@
 <div class="twr" id="twr-page">
 
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-bg"></div>
+  <!-- ===== 1. HERO ===== -->
+  <div class="scene hero seen">
+    <div class="bg" style="background-image:url(https://likeahustla.github.io/iWEL/towers/assets/hero.jpg)"></div>
+    <div class="shade"></div>
     <div class="hero-inner">
-      <div class="hero-kicker">Жилой комплекс нового поколения</div>
+      <div class="kicker">Жилой комплекс нового поколения</div>
       <h1>TOWERS</h1>
       <div class="hero-sub">Новая точка притяжения региона</div>
       <div class="hero-addr">г. Махачкала · ул. Линейная, 5</div>
-      <div class="hero-cta">
-        <a class="btn" href="tel:+7872599955">Позвонить: 599 955</a>
-        <a class="btn ghost" href="#twr-plans">Планировки</a>
-      </div>
+      <div class="hero-more"><a href="#twr-plans">Смотреть планировки</a></div>
     </div>
     <div class="hero-scroll"></div>
   </div>
 
-  <!-- О ПРОЕКТЕ -->
-  <section>
+  <!-- ===== 2. О ПРОЕКТЕ: заголовок + колонка статистики ===== -->
+  <div class="scene about" data-bg="about.jpg">
+    <div class="bg"></div>
+    <div class="shade sh-b"></div>
     <div class="wrap">
-      <div class="split">
-        <div class="rv rv-l">
-          <div class="eyebrow">О проекте</div>
-          <h2>TOWERS — масштабный проект на 8&nbsp;блоков</h2>
-          <p class="lead">Современный жилой комплекс рядом с Духовным центром: продуманная архитектура, собственная инфраструктура и благоустройство, занимающее 70% территории.</p>
-        </div>
-        <div class="pic rv rv-r"><img src="https://likeahustla.github.io/iWEL/towers/assets/about.jpg" alt="Жилой комплекс TOWERS" loading="lazy"></div>
+      <div class="content rv rv-l" style="max-width:640px">
+        <div class="dash"></div>
+        <h2>TOWERS — новая точка притяжения региона</h2>
+        <p class="sub">Масштабный проект из восьми блоков рядом с Духовным центром. 70% территории отдано благоустройству.</p>
       </div>
-      <div class="stats rv">
-        <div class="stat"><b><span class="cnt" data-to="8">0</span></b><span>блоков</span></div>
-        <div class="stat"><b><span class="cnt" data-to="16">0</span></b><span>этажей</span></div>
-        <div class="stat"><b>&gt;<span class="cnt" data-to="1">0</span>&nbsp;га</b><span>территории</span></div>
-        <div class="stat"><b>30/70</b><span>застройка / благоустройство</span></div>
+      <div class="statcol">
+        <div class="st" style="--d:.1s"><b><span class="cnt" data-to="8">0</span></b><span>блоков</span></div>
+        <div class="st" style="--d:.3s"><b><span class="cnt" data-to="16">0</span></b><span>этажей</span></div>
+        <div class="st" style="--d:.5s"><b>&gt;1 га</b><span>территории</span></div>
+        <div class="st hot" style="--d:.7s"><b>30 / 70</b><span>застройка / благоустройство</span></div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- АРХИТЕКТУРА -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="split">
-        <div class="pic rv rv-l"><img src="https://likeahustla.github.io/iWEL/towers/assets/arch.jpg" alt="Архитектура TOWERS" loading="lazy"></div>
-        <div class="rv rv-r">
-          <div class="eyebrow">Архитектура и технологии</div>
-          <h2>Построен, чтобы служить поколениям</h2>
-          <ul class="feats">
-            <li>Панорамные окна Solaris</li>
-            <li>Гибкая керамика FOMI</li>
-            <li>2 скоростных лифта в каждом блоке</li>
-            <li>Высота потолков 3,10 м</li>
-            <li>Бесступенчатая среда</li>
-            <li>Сейсмостойкость до 9 баллов</li>
-            <li>Резервуары запаса воды</li>
-          </ul>
-        </div>
+  <!-- ===== 3. АРХИТЕКТУРА ===== -->
+  <div class="scene" data-bg="arch.jpg">
+    <div class="bg"></div>
+    <div class="shade sh-l"></div>
+    <div class="wrap v-cl">
+      <div class="content rv rv-l">
+        <div class="dash"></div>
+        <h2>Архитектура и&nbsp;технологии</h2>
+        <ul class="feats">
+          <li style="--d:.05s">Панорамные окна Solaris</li>
+          <li style="--d:.15s">Гибкая керамика FOMI</li>
+          <li style="--d:.25s">2 скоростных лифта в каждом блоке</li>
+          <li style="--d:.35s">Высота потолков 3,10 м</li>
+          <li style="--d:.45s">Бесступенчатая среда</li>
+          <li style="--d:.55s">Сейсмостойкость до 9 баллов</li>
+          <li style="--d:.65s">Резервуары запаса воды</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ЛОКАЦИЯ: карта-инфографика -->
-  <section>
-    <div class="wrap">
-      <div class="rv">
-        <div class="eyebrow">Локация</div>
-        <h2>Всё главное — в нескольких минутах от дома</h2>
-        <p class="lead">Комплекс расположен у Духовного центра с собственным заездом с аэропортной трассы.</p>
-      </div>
-      <div class="mapwrap rv" id="twr-map">
-        <img src="https://likeahustla.github.io/iWEL/towers/assets/location.jpg" alt="Карта расположения ЖК TOWERS" loading="lazy">
-        <svg class="maplines" viewBox="0 0 100 56" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M88,16 L54,30"/>
-          <path d="M88,16 L33,22"/>
-          <path d="M88,16 L76,42"/>
-          <path d="M88,16 L10,9"/>
-        </svg>
-        <div class="pin main" style="left:88%;top:16%">
-          <div class="dot"></div>
-          <div class="lbl"><b>TOWERS</b><span>ул. Линейная, 5</span></div>
-        </div>
-        <div class="pin" style="left:54%;top:30%">
-          <div class="dot"></div>
-          <div class="lbl"><b>Духовный центр</b><span>школы · сады · музеи · спорт</span></div>
-        </div>
-        <div class="pin up" style="left:33%;top:22%">
-          <div class="dot"></div>
-          <div class="lbl"><b>Аллея Героев Медиков</b></div>
-        </div>
-        <div class="pin" style="left:76%;top:42%">
-          <div class="dot"></div>
-          <div class="lbl"><b>Аэропортная трасса</b><span>собственный заезд</span></div>
-        </div>
-        <div class="pin" style="left:10%;top:9%">
-          <div class="dot"></div>
-          <div class="lbl"><b>Пляж</b><span>← Каспийское море</span></div>
-        </div>
-      </div>
-      <div class="maplegend rv">
-        <span><i></i>Духовный центр — рядом</span>
-        <span><i></i>Собственный заезд с трассы</span>
-        <span><i></i>Пляж Каспийского моря — в короткой поездке</span>
-      </div>
+  <!-- ===== 4. ЛОКАЦИЯ: инфографика как на слайде ===== -->
+  <div class="scene loc" data-bg="location.jpg">
+    <div class="bg"></div>
+    <div class="shade"></div>
+    <svg class="maplines" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="87" y1="17" x2="55" y2="31"/>
+      <line x1="87" y1="17" x2="34" y2="23"/>
+      <line x1="87" y1="17" x2="77" y2="43"/>
+      <line x1="87" y1="17" x2="11" y2="10"/>
+    </svg>
+    <div class="pin main" style="left:87%;top:17%;--d:.1s">
+      <div class="ring"><img src="https://likeahustla.github.io/iWEL/towers/assets/hero.jpg" alt="TOWERS"></div>
+      <div class="cap"><b>TOWERS</b><span>ул. Линейная, 5</span></div>
     </div>
-  </section>
-
-  <!-- ДВОР -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="rv">
-        <div class="eyebrow">Двор и отдых</div>
-        <h2>Пространство для отдыха всей семьи</h2>
-        <p class="lead">Авторские детские площадки, зоны отдыха для родителей, ландшафтное благоустройство и спортивная инфраструктура в шаге от дома.</p>
-      </div>
-      <div class="cards">
-        <div class="card rv" style="--d:0s"><div class="imgw"><img src="https://likeahustla.github.io/iWEL/towers/assets/padel.jpg" alt="Падл-корт" loading="lazy"></div><div class="cap"><b>Падл-корт</b><span>на территории комплекса</span></div></div>
-        <div class="card rv" style="--d:.15s"><div class="imgw"><img src="https://likeahustla.github.io/iWEL/towers/assets/basket.jpg" alt="Баскетбольная площадка" loading="lazy"></div><div class="cap"><b>Баскетбольная площадка</b><span>пространство для активного образа жизни</span></div></div>
-        <div class="card rv" style="--d:.3s"><div class="imgw"><img src="https://likeahustla.github.io/iWEL/towers/assets/family.jpg" alt="Амфитеатр и зоны отдыха" loading="lazy"></div><div class="cap"><b>Амфитеатр и зоны отдыха</b><span>комфортная среда для всей семьи</span></div></div>
-      </div>
+    <div class="pin" style="left:55%;top:31%;--d:.35s">
+      <div class="dot"></div>
+      <div class="lbl"><b>Духовный центр</b><span>школы · сады · музеи · спортивные комплексы</span></div>
     </div>
-  </section>
-
-  <!-- БЕЗОПАСНОСТЬ -->
-  <div class="band" style="--band-img:url(https://likeahustla.github.io/iWEL/towers/assets/security-cam.jpg)">
-    <div class="band-bg" data-plx></div>
+    <div class="pin up" style="left:34%;top:23%;--d:.55s">
+      <div class="dot"></div>
+      <div class="lbl"><b>Аллея Героев Медиков</b></div>
+    </div>
+    <div class="pin" style="left:77%;top:43%;--d:.75s">
+      <div class="dot"></div>
+      <div class="lbl"><b>Аэропортная трасса</b><span>собственный заезд с трассы</span></div>
+    </div>
+    <div class="pin up" style="left:11%;top:10%;--d:.95s">
+      <div class="dot"></div>
+      <div class="lbl"><b>Пляж</b><span>← Каспийское море</span></div>
+    </div>
     <div class="wrap">
       <div class="content rv rv-l">
-        <div class="eyebrow">Безопасность</div>
-        <h2>Среда, в&nbsp;которой спокойно</h2>
-        <ul class="feats">
-          <li>Видеонаблюдение и безопасность 24/7</li>
-          <li>Хранение записей на защищённых серверах</li>
-          <li>Контроль транспорта на территории</li>
-          <li>Автоматический шлагбаум и пост доступа</li>
-        </ul>
+        <div class="dash"></div>
+        <h2>Локация</h2>
+        <p class="sub">Всё главное — в нескольких минутах от дома</p>
       </div>
     </div>
   </div>
 
-  <!-- ПАРКОВКА -->
-  <div class="band right" style="--band-img:url(https://likeahustla.github.io/iWEL/towers/assets/parking.jpg)">
-    <div class="band-bg" data-plx></div>
+  <!-- ===== 5. СПОРТ: тёмная панель + два кадра ===== -->
+  <div class="scene solid duo">
     <div class="wrap">
+      <div class="content rv rv-l">
+        <div class="dash"></div>
+        <h2>Спорт и&nbsp;активный отдых</h2>
+        <ul class="feats">
+          <li style="--d:.05s">Падл-корт на территории комплекса</li>
+          <li style="--d:.15s">Баскетбольная площадка</li>
+          <li style="--d:.25s">Пространство для активного образа жизни</li>
+          <li style="--d:.35s">Спортивная инфраструктура в шаге от дома</li>
+        </ul>
+      </div>
+      <div class="shots">
+        <div class="shot" style="--d:.15s"><img src="https://likeahustla.github.io/iWEL/towers/assets/padel.jpg" alt="Падл-корт" loading="lazy"><div class="cap">Падл-корт</div></div>
+        <div class="shot" style="--d:.35s"><img src="https://likeahustla.github.io/iWEL/towers/assets/basket.jpg" alt="Баскетбольная площадка" loading="lazy"><div class="cap">Баскетбольная площадка</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 6. СЕМЬЯ ===== -->
+  <div class="scene" data-bg="family.jpg">
+    <div class="bg"></div>
+    <div class="shade sh-r"></div>
+    <div class="wrap v-cr">
       <div class="content rv rv-r">
-        <div class="eyebrow">Парковка</div>
-        <h2>Места для каждой семьи</h2>
+        <div class="dash"></div>
+        <h2>Пространство для отдыха всей семьи</h2>
         <ul class="feats">
-          <li>Просторная парковочная зона</li>
-          <li>Собственный заезд с главной трассы</li>
-          <li>Удобная организация движения</li>
+          <li style="--d:.05s">Авторские детские площадки</li>
+          <li style="--d:.15s">Зоны отдыха для родителей</li>
+          <li style="--d:.25s">Ландшафтное благоустройство</li>
+          <li style="--d:.35s">Комфортная среда для всей семьи</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- КОММЕРЦИЯ -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="rv">
-        <div class="eyebrow">Инфраструктура</div>
-        <h2>Пространство для жизни</h2>
-        <p class="lead">2 этажа коммерческой инфраструктуры для ежедневного комфорта жителей.</p>
-      </div>
-      <div class="cards">
-        <div class="card rv" style="--d:0s"><div class="imgw"><img src="https://likeahustla.github.io/iWEL/towers/assets/lobby.jpg" alt="Премиальное лобби TOWERS" loading="lazy"></div><div class="cap"><b>Собственное лобби</b><span>премиальная входная группа</span></div></div>
-        <div class="card rv" style="--d:.15s"><div class="imgw"><img src="https://likeahustla.github.io/iWEL/towers/assets/cafe.jpg" alt="Кофейни и рестораны" loading="lazy"></div><div class="cap"><b>Кофейни и рестораны</b><span>на первых этажах комплекса</span></div></div>
-        <div class="card rv" style="--d:.3s"><div class="imgw"><img src="https://likeahustla.github.io/iWEL/towers/assets/pvz.jpg" alt="Ozon и Wildberries" loading="lazy"></div><div class="cap"><b>Ozon и Wildberries</b><span>аптеки и магазины рядом с домом</span></div></div>
+  <!-- ===== 7. БЕЗОПАСНОСТЬ ===== -->
+  <div class="scene" data-bg="security-cam.jpg">
+    <div class="bg"></div>
+    <div class="shade sh-l"></div>
+    <div class="wrap v-cl">
+      <div class="content rv rv-l">
+        <div class="dash"></div>
+        <h2>Среда, в&nbsp;которой спокойно</h2>
+        <div class="kicker" style="margin-bottom:6px">Видеонаблюдение</div>
+        <ul class="feats">
+          <li style="--d:.05s">Безопасность 24/7</li>
+          <li style="--d:.15s">Безопасность жителей и гостей</li>
+          <li style="--d:.25s">Хранение записей на защищённых серверах</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ПЛАНИРОВКИ -->
-  <section id="twr-plans">
+  <!-- ===== 8. КОНТРОЛЬ ВЪЕЗДА ===== -->
+  <div class="scene" data-bg="security-gate.jpg">
+    <div class="bg"></div>
+    <div class="shade sh-r"></div>
+    <div class="wrap v-cr">
+      <div class="content rv rv-r">
+        <div class="dash"></div>
+        <h2>Контроль въезда</h2>
+        <div class="kicker" style="margin-bottom:6px">Доступ на территорию</div>
+        <ul class="feats">
+          <li style="--d:.05s">Контроль транспорта</li>
+          <li style="--d:.15s">Автоматический шлагбаум и пост доступа</li>
+          <li style="--d:.25s">Собственный заезд с аэропортной трассы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 9. ПАРКОВКА ===== -->
+  <div class="scene" data-bg="parking.jpg">
+    <div class="bg"></div>
+    <div class="shade sh-l"></div>
+    <div class="wrap v-cl">
+      <div class="content rv rv-l">
+        <div class="dash"></div>
+        <h2>Парковка</h2>
+        <ul class="feats">
+          <li style="--d:.05s">Просторная парковочная зона</li>
+          <li style="--d:.15s">Места для каждой семьи</li>
+          <li style="--d:.25s">Собственный заезд с главной трассы</li>
+          <li style="--d:.35s">Удобная организация движения</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 10. КОММЕРЦИЯ ===== -->
+  <div class="scene solid duo">
+    <div class="wrap">
+      <div class="content rv rv-l">
+        <div class="dash"></div>
+        <h2>Пространство для&nbsp;жизни</h2>
+        <p class="sub">Собственная инфраструктура для ежедневного комфорта жителей</p>
+        <ul class="feats">
+          <li style="--d:.05s">2 этажа коммерческой инфраструктуры</li>
+          <li style="--d:.15s">Собственное лобби</li>
+          <li style="--d:.25s">Кофейни и рестораны</li>
+          <li style="--d:.35s">Ozon и Wildberries</li>
+          <li style="--d:.45s">Аптеки и магазины</li>
+        </ul>
+      </div>
+      <div class="grid-r">
+        <div class="shot" style="--d:.1s"><img src="https://likeahustla.github.io/iWEL/towers/assets/lobby.jpg" alt="Премиальное лобби TOWERS" loading="lazy"><div class="cap">Премиальное лобби TOWERS</div></div>
+        <div class="row3">
+          <div class="shot" style="--d:.3s"><img src="https://likeahustla.github.io/iWEL/towers/assets/cafe.jpg" alt="Кофейни и рестораны" loading="lazy"><div class="cap">Кофейни и рестораны</div></div>
+          <div class="shot" style="--d:.45s"><img src="https://likeahustla.github.io/iWEL/towers/assets/pvz.jpg" alt="Ozon и Wildberries" loading="lazy"><div class="cap">Ozon и Wildberries</div></div>
+          <div class="shot" style="--d:.6s"><img src="https://likeahustla.github.io/iWEL/towers/assets/entrance.jpg" alt="Собственное лобби" loading="lazy"><div class="cap">Собственное лобби</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 11. ПЛАНИРОВКИ ===== -->
+  <div class="scene solid plans-scene" id="twr-plans">
     <div class="wrap">
       <div class="rv">
-        <div class="eyebrow">Планировки</div>
+        <div class="dash"></div>
         <h2>Продуманные планировочные решения</h2>
-        <p class="lead">10 квартир на этаже, 2 скоростных лифта и удобная организация пространства.</p>
+        <p class="sub">10 квартир на этаже · 2 скоростных лифта · удобная организация пространства</p>
       </div>
 
-      <div class="floorplan-intro rv">
-        <img src="https://likeahustla.github.io/iWEL/towers/assets/floorplan.png" alt="Поэтажный план — 10 квартир на этаже" loading="lazy">
+      <div class="floorwide rv">
+        <img src="https://likeahustla.github.io/iWEL/towers/assets/floorplan.jpg" alt="Поэтажный план — 10 квартир на этаже" loading="lazy">
         <div class="tag">Типовой этаж · 10 квартир · 2 лифта</div>
       </div>
 
@@ -191,6 +234,7 @@
 
       <div class="plan on" id="p0">
         <div class="meta">
+          <div class="plabel">План квартиры</div>
           <h3>Студия</h3>
           <div class="area">21,33 <small>м²</small></div>
           <table class="rooms">
@@ -198,11 +242,12 @@
             <tr><td>Ванная</td><td>2,91 м²</td></tr>
           </table>
         </div>
-        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-studio.png" alt="План студии 21,33 м²" loading="lazy"></div>
+        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-studio.jpg" alt="План студии 21,33 м²" loading="lazy"></div>
       </div>
 
       <div class="plan" id="p1">
         <div class="meta">
+          <div class="plabel">План квартиры</div>
           <h3>1-комнатная квартира</h3>
           <div class="area">43,94 <small>м²</small></div>
           <table class="rooms">
@@ -213,11 +258,12 @@
             <tr><td>Кладовая</td><td>2,25 м²</td></tr>
           </table>
         </div>
-        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-1k.png" alt="План 1-комнатной квартиры 43,94 м²" loading="lazy"></div>
+        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-1k.jpg" alt="План 1-комнатной квартиры 43,94 м²" loading="lazy"></div>
       </div>
 
       <div class="plan" id="p2">
         <div class="meta">
+          <div class="plabel">План квартиры</div>
           <h3>2-комнатная квартира</h3>
           <div class="area">70,21 <small>м²</small></div>
           <table class="rooms">
@@ -227,11 +273,12 @@
             <tr><td>Ванная</td><td>3,60 м²</td></tr>
           </table>
         </div>
-        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-2k.png" alt="План 2-комнатной квартиры 70,21 м²" loading="lazy"></div>
+        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-2k.jpg" alt="План 2-комнатной квартиры 70,21 м²" loading="lazy"></div>
       </div>
 
       <div class="plan" id="p3">
         <div class="meta">
+          <div class="plabel">План квартиры</div>
           <h3>3-комнатная квартира</h3>
           <div class="area">107,63 <small>м²</small></div>
           <table class="rooms">
@@ -245,72 +292,56 @@
             <tr><td>С/у</td><td>2,60 м²</td></tr>
           </table>
         </div>
-        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-3k.png" alt="План 3-комнатной квартиры 107,63 м²" loading="lazy"></div>
+        <div class="pic"><img src="https://likeahustla.github.io/iWEL/towers/assets/plan-3k.jpg" alt="План 3-комнатной квартиры 107,63 м²" loading="lazy"></div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ИНВЕСТИЦИИ -->
-  <div class="band dim invest">
-    <div class="band-bg" data-plx></div>
-    <div class="wrap" style="width:100%">
-      <div class="content rv">
-        <div class="eyebrow">Инвестиционная привлекательность</div>
-        <h2>Сегодня — возможность.<br>Завтра — новый уровень стоимости</h2>
+  <!-- ===== 12. ИНВЕСТИЦИИ ===== -->
+  <div class="scene invest" data-bg="invest.jpg">
+    <div class="bg"></div>
+    <div class="shade"></div>
+    <div class="wrap">
+      <div class="content rv rv-l" style="max-width:720px">
+        <div class="dash"></div>
+        <h2>Инвестиционная привлекательность</h2>
+        <p class="sub">Сегодня — возможность. Завтра — новый уровень стоимости.</p>
       </div>
-      <div class="chartbox rv" id="twr-chart">
-        <svg class="chart" viewBox="0 0 820 330">
+      <div class="chartzone">
+        <svg class="chart" viewBox="0 0 860 340">
           <defs>
             <linearGradient id="twrGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#c8a35f" stop-opacity=".28"/>
+              <stop offset="0" stop-color="#c8a35f" stop-opacity=".3"/>
               <stop offset="1" stop-color="#c8a35f" stop-opacity="0"/>
             </linearGradient>
           </defs>
-          <line class="axis" x1="30" y1="285" x2="800" y2="285"/>
-          <path class="areaP" d="M60,250 L250,208 L440,168 L600,128 L760,55 L760,285 L60,285 Z"/>
-          <path class="lineP" id="twr-line" d="M60,250 L250,208 L440,168 L600,128 L760,55"/>
-          <circle class="pt" cx="60" cy="250" r="6"/>
-          <circle class="pt" cx="250" cy="208" r="6"/>
-          <circle class="pt" cx="440" cy="168" r="6"/>
-          <circle class="pt" cx="600" cy="128" r="6"/>
-          <circle class="pt" cx="760" cy="55" r="7"/>
-          <text class="yr" x="60" y="310" text-anchor="middle">2023</text>
-          <text class="yr" x="250" y="310" text-anchor="middle">2024</text>
-          <text class="yr" x="440" y="310" text-anchor="middle">2025</text>
-          <text class="yr" x="600" y="310" text-anchor="middle">2026</text>
-          <text class="yr" x="760" y="310" text-anchor="middle">2027</text>
-          <text class="val" x="60" y="228" text-anchor="middle">50 000 ₽/м²</text>
-          <text class="val" x="250" y="186" text-anchor="middle">65 000</text>
-          <text class="val" x="440" y="146" text-anchor="middle">80 000</text>
-          <text class="val" x="600" y="106" text-anchor="middle">90 000</text>
-          <text class="val hot" x="746" y="34" text-anchor="middle">от 150 000 ₽/м²</text>
-          <text class="yr" x="60" y="270" text-anchor="middle" opacity=".7">старт продаж</text>
-          <text class="yr" x="746" y="76" text-anchor="middle" opacity=".7">ввод в эксплуатацию</text>
+          <line class="axis" x1="30" y1="292" x2="840" y2="292"/>
+          <path class="areaP" d="M70,255 L270,212 L460,172 L620,132 L790,58 L790,292 L70,292 Z"/>
+          <path class="lineP" id="twr-line" d="M70,255 L270,212 L460,172 L620,132 L790,58"/>
+          <circle class="pt" cx="70" cy="255" r="6" style="--d:.35s"/>
+          <circle class="pt" cx="270" cy="212" r="6" style="--d:.65s"/>
+          <circle class="pt" cx="460" cy="172" r="6" style="--d:.95s"/>
+          <circle class="pt" cx="620" cy="132" r="6" style="--d:1.25s"/>
+          <circle class="pt" cx="790" cy="58" r="7" style="--d:1.55s"/>
+          <text class="yr" x="70" y="318" text-anchor="middle">2023</text>
+          <text class="yr" x="270" y="318" text-anchor="middle">2024</text>
+          <text class="yr" x="460" y="318" text-anchor="middle">2025</text>
+          <text class="yr" x="620" y="318" text-anchor="middle">2026</text>
+          <text class="yr" x="790" y="318" text-anchor="middle">2027</text>
+          <text class="val" x="70" y="232" text-anchor="middle">50 000 ₽/м²</text>
+          <text class="val" x="270" y="190" text-anchor="middle">65 000</text>
+          <text class="val" x="460" y="150" text-anchor="middle">80 000</text>
+          <text class="val" x="620" y="110" text-anchor="middle">90 000</text>
+          <text class="val hot" x="772" y="36" text-anchor="middle">от 150 000 ₽/м²</text>
+          <text class="note" x="70" y="275" text-anchor="middle">старт продаж</text>
+          <text class="note" x="620" y="158" text-anchor="middle">ограниченное предложение</text>
+          <text class="note" x="772" y="80" text-anchor="middle">после ввода в эксплуатацию</text>
         </svg>
       </div>
       <div class="invest-foot">
         <div class="x3 rv rv-l">×3<small>рост стоимости за период строительства</small></div>
         <div class="invest-note rv rv-r">
-          <b>Пример инвестиции:</b> квартира 100 м² — 5 000 000 ₽ в 2023 году, от 15 000 000 ₽ к 2027 году.<br>
-          Масштабный проект на 8 блоков · перспективная локация рядом с Духовным центром · максимальная выгода на старте продаж.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- КОНТАКТЫ -->
-  <div class="band contact-band">
-    <div class="band-bg" data-plx></div>
-    <div class="wrap">
-      <div class="contact rv">
-        <div class="eyebrow" style="display:inline-flex;align-items:center">Отдел продаж</div>
-        <h2>Выберите свою квартиру в TOWERS</h2>
-        <a class="phone" href="tel:+7872599955">599 955</a>
-        <p>г. Махачкала, ул. Линейная, 5</p>
-        <div class="hero-cta"><a class="btn" href="tel:+7872599955">Позвонить</a></div>
-        <div class="foot">
-          <span>ЖК TOWERS — жилой комплекс нового поколения</span>
-          <a href="https://iwel.ru">iwel.ru</a>
+          <b>Пример инвестиции:</b> квартира 100 м² — 5 000 000 ₽ в 2023 году, от 15 000 000 ₽ к 2027 году. Максимальная выгода на старте продаж.
         </div>
       </div>
     </div>
