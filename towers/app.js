@@ -172,6 +172,12 @@
           p.style.top = y + 'px';
           p.style.display = vis ? '' : 'none';
           p._pt = vis ? [x, y] : null;
+          var lbl = p.querySelector('.lbl');
+          if (lbl) {
+            if (x > W * 0.68) lbl.style.transform = 'translateX(-88%)';
+            else if (x < W * 0.16) lbl.style.transform = 'translateX(-12%)';
+            else lbl.style.transform = 'translateX(-50%)';
+          }
           if (p.classList.contains('main')) main = p;
         });
         while (svg.firstChild) svg.removeChild(svg.firstChild);
