@@ -1,0 +1,128 @@
+/* TOWERS landing — scoped styles for Tilda embed */
+.twr{
+  --bg:#0d0f13; --bg2:#12151b; --card:#161a21; --line:rgba(200,163,95,.35);
+  --gold:#c8a35f; --gold-soft:#e6d3a3; --text:#f2efe9; --muted:#b8b4ac;
+  background:var(--bg); color:var(--text);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:17px; line-height:1.6; overflow:hidden;
+}
+.twr *{margin:0;padding:0;box-sizing:border-box}
+.twr img{max-width:100%;display:block}
+.twr .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.twr .serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+
+/* ---------- hero ---------- */
+.twr .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;justify-content:center;text-align:center;isolation:isolate}
+.twr .hero::before{content:"";position:absolute;inset:0;background:url(https://likeahustla.github.io/iWEL/towers/assets/hero.jpg) center/cover no-repeat;z-index:-2}
+.twr .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,19,.25) 0%,rgba(13,15,19,.05) 40%,rgba(13,15,19,.88) 100%);z-index:-1}
+.twr .hero-inner{padding:0 24px 9vh}
+.twr .hero-kicker{font-size:13px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:18px}
+.twr .hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(64px,12vw,150px);letter-spacing:.28em;text-indent:.28em;line-height:1;color:#fff}
+.twr .hero-sub{margin-top:18px;font-size:clamp(16px,2.4vw,22px);letter-spacing:.14em;color:#e9e6df}
+.twr .hero-addr{margin-top:26px;display:inline-flex;gap:14px;align-items:center;color:var(--muted);font-size:15px;letter-spacing:.06em}
+.twr .hero-addr::before,.twr .hero-addr::after{content:"";width:44px;height:1px;background:var(--line)}
+.twr .hero-cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- buttons ---------- */
+.twr .btn{display:inline-block;padding:15px 34px;border:1px solid var(--gold);color:#0d0f13;background:var(--gold);font-size:15px;letter-spacing:.08em;text-decoration:none;transition:.25s;border-radius:2px}
+.twr .btn:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+.twr .btn.ghost{background:transparent;color:var(--text)}
+.twr .btn.ghost:hover{background:rgba(200,163,95,.12);color:#fff}
+
+/* ---------- sections ---------- */
+.twr section{padding:96px 0}
+.twr section.alt{background:var(--bg2)}
+.twr .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.twr .eyebrow::before{content:"";display:inline-block;width:34px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px}
+.twr h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,5vw,54px);line-height:1.12;margin-bottom:20px}
+.twr .lead{color:var(--muted);max-width:640px}
+
+/* stats */
+.twr .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(200,163,95,.25);margin-top:56px}
+.twr .stat{background:var(--bg);padding:34px 20px;text-align:center}
+.twr section.alt .stat{background:var(--bg2)}
+.twr .stat b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:52px;color:var(--gold);line-height:1}
+.twr .stat span{display:block;margin-top:10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* split layout */
+.twr .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.twr .split .pic{position:relative}
+.twr .split .pic img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.twr .split .pic::after{content:"";position:absolute;inset:14px;border:1px solid rgba(200,163,95,.35);border-radius:2px;pointer-events:none}
+.twr ul.feats{list-style:none;margin-top:8px}
+.twr ul.feats li{padding:13px 0 13px 34px;border-bottom:1px solid rgba(255,255,255,.08);position:relative;color:#e6e3dc}
+.twr ul.feats li::before{content:"";position:absolute;left:0;top:50%;width:20px;height:1px;background:var(--gold)}
+.twr ul.feats li:last-child{border-bottom:none}
+
+/* full-bleed photo band */
+.twr .band{position:relative;min-height:520px;display:flex;align-items:center;isolation:isolate;padding:96px 0}
+.twr .band::before{content:"";position:absolute;inset:0;background:var(--band-img) center/cover no-repeat;z-index:-2}
+.twr .band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,15,19,.9) 0%,rgba(13,15,19,.55) 55%,rgba(13,15,19,.15) 100%);z-index:-1}
+.twr .band.right::after{background:linear-gradient(270deg,rgba(13,15,19,.9) 0%,rgba(13,15,19,.55) 55%,rgba(13,15,19,.15) 100%)}
+.twr .band .content{max-width:520px}
+.twr .band.right .content{margin-left:auto;text-align:left}
+
+/* cards / gallery */
+.twr .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.twr .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.twr .card img{aspect-ratio:16/10;width:100%;object-fit:cover}
+.twr .card .cap{padding:18px 20px}
+.twr .card .cap b{display:block;font-size:17px;font-weight:600;color:#fff}
+.twr .card .cap span{font-size:14px;color:var(--muted)}
+
+/* plans tabs */
+.twr .tabs{display:flex;gap:10px;flex-wrap:wrap;margin:40px 0 32px}
+.twr .tab{padding:12px 22px;border:1px solid rgba(200,163,95,.4);color:var(--muted);cursor:pointer;font-size:15px;letter-spacing:.04em;border-radius:2px;background:transparent;transition:.2s}
+.twr .tab:hover{color:#fff}
+.twr .tab.on{background:var(--gold);border-color:var(--gold);color:#0d0f13}
+.twr .plan{display:none;grid-template-columns:380px 1fr;gap:56px;align-items:center}
+.twr .plan.on{display:grid}
+.twr .plan .meta h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:38px;margin-bottom:4px}
+.twr .plan .area{font-family:'Cormorant Garamond',Georgia,serif;font-size:44px;color:var(--gold);margin-bottom:22px}
+.twr .plan .area small{font-size:22px;color:var(--gold-soft)}
+.twr .rooms{width:100%;border-collapse:collapse;font-size:15px}
+.twr .rooms td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#dfdcd5}
+.twr .rooms td:last-child{text-align:right;color:var(--muted)}
+.twr .plan .pic img{filter:drop-shadow(0 30px 50px rgba(0,0,0,.5))}
+
+/* invest */
+.twr .invest{--band-img:url(https://likeahustla.github.io/iWEL/towers/assets/invest.jpg)}
+.twr .invest-grid{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end;margin-top:40px}
+.twr .miles{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;counter-reset:none}
+.twr .mile{background:rgba(13,15,19,.72);backdrop-filter:blur(4px);padding:22px 18px;border-top:2px solid rgba(200,163,95,.35)}
+.twr .mile.hot{border-top-color:var(--gold)}
+.twr .mile em{font-style:normal;display:block;font-size:13px;letter-spacing:.14em;color:var(--muted)}
+.twr .mile b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;color:#fff;margin-top:6px}
+.twr .mile.hot b{color:var(--gold)}
+.twr .x3{font-family:'Cormorant Garamond',Georgia,serif;font-size:110px;line-height:.9;color:var(--gold)}
+.twr .x3 small{display:block;font-family:'Inter',sans-serif;font-size:14px;letter-spacing:.08em;color:#e9e6df;margin-top:10px;max-width:220px}
+.twr .invest-note{margin-top:30px;padding:20px 24px;background:rgba(13,15,19,.72);border-left:2px solid var(--gold);font-size:15px;color:#e6e3dc;max-width:640px}
+
+/* contacts */
+.twr .contact{text-align:center}
+.twr .contact .phone{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(40px,7vw,64px);color:#fff;text-decoration:none;display:inline-block;margin:18px 0 8px}
+.twr .contact .phone:hover{color:var(--gold-soft)}
+.twr .contact p{color:var(--muted)}
+.twr .foot{margin-top:44px;padding-top:28px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:center;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.twr .foot a{color:var(--gold-soft);text-decoration:none}
+
+/* reveal animation */
+.twr .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.twr .rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .twr .split{grid-template-columns:1fr;gap:36px}
+  .twr .cards{grid-template-columns:1fr 1fr}
+  .twr .stats{grid-template-columns:1fr 1fr}
+  .twr .plan{grid-template-columns:1fr;gap:32px}
+  .twr .invest-grid{grid-template-columns:1fr}
+  .twr .miles{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .twr section{padding:64px 0}
+  .twr .cards{grid-template-columns:1fr}
+  .twr .hero{min-height:86vh}
+  .twr .band{min-height:0}
+  .twr .x3{font-size:80px}
+}
