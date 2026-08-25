@@ -167,6 +167,9 @@
         pins.forEach(function (p) {
           var x = ox + (parseFloat(p.getAttribute('data-x')) / 100) * dw;
           var y = oy + (parseFloat(p.getAttribute('data-y')) / 100) * dh;
+          if (mobile && p.classList.contains('main') && x > -W * 0.15 && x < W * 1.15) {
+            x = Math.min(Math.max(x, W * 0.14), W * 0.86);
+          }
           var vis = x > W * 0.05 && x < W * 0.95 && y > H * 0.06 && y < H * 0.94;
           p.style.left = x + 'px';
           p.style.top = y + 'px';
