@@ -43,6 +43,7 @@
 .twr h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(38px,5.2vw,64px);line-height:1.08;margin-bottom:22px;color:#fff}
 .twr .sub{color:#d9d5cd;font-size:clamp(16px,1.6vw,19px);max-width:560px}
 .twr .kicker{font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:16px}
+.twr .kicker-white{color:#fff}
 
 /* feature list — presentation style */
 .twr ul.feats{list-style:none;margin-top:30px}
